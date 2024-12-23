@@ -1,4 +1,5 @@
-"# Score Query Assistant" 
+## Score Query Assistant
+ 
 
 - Node
 - Redis
