@@ -159,7 +159,7 @@ async function cjcx() {
             const currentData = JSON.stringify(storedCourses);
             await redis.set('kc_cj', currentData);
                  //自己申请api
-                await axios.post('https://iyuu.cn/3123123.send', null, {
+                await axios.post('https://iyuu.cn/xxxxxxx.send', null, {
         params: {
             text: '成绩更新通知',
             desp: changeMessage
