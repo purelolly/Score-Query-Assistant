@@ -7,9 +7,9 @@ import { chromium } from 'playwright'
 import * as cheerio from 'cheerio';
 
 const redis = new Redis({
-    host: '192.168.31.1',
+    host: '127.0.0.1',
     port: 6379,
-    password: 'AybPxEJMe0JhWb8sHFN3',
+    password: '1234567',
     db: 0
 });
 
