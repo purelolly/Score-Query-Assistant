@@ -45,7 +45,7 @@ async function runBrowser()
     const captchaID = uploadResponse.data.request;
     let result = '';
         while (true) {
-          const getResultResponse = await axios.get(`https://2captcha.com/res.php?key=f1c110401af1e8b51cf892cccd8ee8a2&action=get&id=${captchaID}&json=1`);
+          const getResultResponse = await axios.get(`https://2captcha.com/res.php?key=${process.env.captcha_key}=get&id=${captchaID}&json=1`);
           if (getResultResponse.data.status === 1) {
             result = getResultResponse.data.request;
             break;
